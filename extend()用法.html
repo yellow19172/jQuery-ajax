@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>extend()用法</title>
+    <script src="https://code.jquery.com/jquery-2.2.4.js"
+            integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI="
+            crossorigin="anonymous">
+    </script>
+</head>
+<body>
+<script>
+    var obj1 ={
+        a :1,
+        b:2
+    }
+    var obj2 ={
+        b:3,
+        c:4,
+        d:5
+    }
+    $.extend(obj1,obj2)
+    console.log(obj1)
+
+     var obj3 = $.extend({},obj1,obj2)
+    console.log(obj3)
+</script>
+</body>
+</html>
